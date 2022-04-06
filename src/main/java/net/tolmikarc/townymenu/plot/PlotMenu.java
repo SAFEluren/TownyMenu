@@ -95,7 +95,7 @@ public class PlotMenu extends Menu {
 		protected ItemStack convertToItemStack(Resident item) {
 			if (item.getUUID() == null)
 				return null;
-			ItemStack itemSkull = new ItemStack(Material.PLAYER_HEAD, 1);
+			ItemStack itemSkull = new ItemStack(Material.SKULL_ITEM, 1);
 			SkullMeta skull = (SkullMeta) itemSkull.getItemMeta();
 			skull.setDisplayName(item.getName());
 			Player player = Bukkit.getPlayer(item.getUUID());

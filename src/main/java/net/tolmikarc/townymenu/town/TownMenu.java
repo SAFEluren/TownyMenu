@@ -394,7 +394,7 @@ public class TownMenu extends Menu {
 
 		@Override
 		protected ItemStack convertToItemStack(Resident item) {
-			ItemStack itemSkull = new ItemStack(Material.PLAYER_HEAD, 1);
+			ItemStack itemSkull = new ItemStack(Material.SKULL_ITEM, 1);
 			SkullMeta skull = (SkullMeta) itemSkull.getItemMeta();
 			skull.setDisplayName(ChatColor.YELLOW + "" + ChatColor.BOLD + item.getFormattedTitleName());
 			if (item.getUUID() == null)
@@ -985,7 +985,7 @@ public class TownMenu extends Menu {
 
 		@Override
 		protected ItemStack convertToItemStack(Resident item) {
-			ItemStack itemSkull = new ItemStack(Material.PLAYER_HEAD, 1);
+			ItemStack itemSkull = new ItemStack(Material.SKULL_ITEM, 1);
 			SkullMeta skull = (SkullMeta) itemSkull.getItemMeta();
 			skull.setDisplayName(item.getName());
 			OfflinePlayer player = Bukkit.getOfflinePlayer(item.getUUID());
